@@ -2,6 +2,7 @@
   <library name="Gradle: dom4j:dom4j:1.6.1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

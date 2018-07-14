@@ -2,6 +2,7 @@
   <library name="Gradle: javax.transaction:javax.transaction-api:1.2">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

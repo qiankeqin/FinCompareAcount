@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : financial : manager.war (exploded)">
+    <output-path>$PROJECT_DIR$/manager/build/libs/exploded/manager.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/manager/build/libs/exploded/manager.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="manager_main/web/Web Gradle : manager.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="manager_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/manager/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="com.spring4all-entity-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="entity_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/entity/out/production/resources" />
+          </element>
+          <element id="archive" name="com.spring4all-util-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="util_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/util/out/production/resources" />
+          </element>
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

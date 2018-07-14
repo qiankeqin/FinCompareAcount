@@ -2,6 +2,7 @@
   <library name="Gradle: org.aspectj:aspectjweaver:1.8.10">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

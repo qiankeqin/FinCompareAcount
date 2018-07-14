@@ -2,6 +2,7 @@
   <library name="Gradle: org.jboss:jandex:2.0.0.Final">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

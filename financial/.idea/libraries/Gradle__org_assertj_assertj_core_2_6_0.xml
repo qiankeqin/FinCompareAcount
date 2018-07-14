@@ -2,6 +2,7 @@
   <library name="Gradle: org.assertj:assertj-core:2.6.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

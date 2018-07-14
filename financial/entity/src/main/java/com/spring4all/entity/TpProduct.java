@@ -132,6 +132,18 @@ public class TpProduct {
         this.updateUser = updateUser;
     }
 
+    public TpProduct() {
+    }
+
+    public TpProduct(String id, String name, String status, BigDecimal thresholdAmount, BigDecimal stepAmount, BigDecimal rewardRate) {
+        this.id = id;
+        this.name = name;
+        this.status = status;
+        this.thresholdAmount = thresholdAmount;
+        this.stepAmount = stepAmount;
+        this.rewardRate = rewardRate;
+    }
+
     @Override
     public String toString() {
         return "TpOrder{" +

@@ -2,6 +2,7 @@
   <library name="Gradle: org.hibernate:hibernate-validator:5.3.5.Final">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/org/hibernate/hibernate-validator/5.3.5.Final/hibernate-validator-5.3.5.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/org/hibernate/hibernate-validator/5.3.5.Final/hibernate-validator-5.3.5.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

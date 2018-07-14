@@ -2,6 +2,7 @@
   <library name="Gradle: org.skyscreamer:jsonassert:1.4.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

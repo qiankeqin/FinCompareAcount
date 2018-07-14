@@ -2,6 +2,7 @@
   <library name="Gradle: net.minidev:json-smart:2.2.1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -2,6 +2,7 @@
   <library name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../mvn-repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../mvn-repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
