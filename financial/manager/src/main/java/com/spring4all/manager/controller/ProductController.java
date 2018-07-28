@@ -2,6 +2,8 @@ package com.spring4all.manager.controller;
 
 import com.spring4all.entity.TpProduct;
 import com.spring4all.manager.service.TpProductService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +26,13 @@ import java.util.List;
  **/
 @RestController
 @RequestMapping("/product")
+//@Api(tags="product",description = "product相关")
 public class ProductController {
     private static Logger LOG = LoggerFactory.getLogger(ProductController.class);
     @Autowired
     private TpProductService productService;
 
+    @ApiOperation(value="创建产品",notes="根据对应业务规则添加响应的产品")
     @RequestMapping(value="",method = RequestMethod.POST)
     public TpProduct addProduct(@RequestBody TpProduct product){
         LOG.info("创建产品,参数:{}",product);

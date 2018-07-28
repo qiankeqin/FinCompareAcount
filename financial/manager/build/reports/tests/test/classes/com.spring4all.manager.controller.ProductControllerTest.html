@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.spring4all.manager.controller.ProductControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.spring4all.manager.controller.ProductControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.spring4all.manager.controller.html">com.spring4all.manager.controller</a> &gt; ProductControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.953s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">create</td>
+<td class="success">0.605s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createException</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findOne</td>
+<td class="success">0.059s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transaction</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">zzzzClean</td>
+<td class="success">0.206s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:16:12.320 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.329 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:16:12.336 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:16:12.362 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.spring4all.manager.controller.ProductControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:16:12.378 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.spring4all.manager.controller.ProductControllerTest], using SpringBootContextLoader
+00:16:12.381 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.spring4all.manager.controller.ProductControllerTest]: class path resource [com/spring4all/manager/controller/ProductControllerTest-context.xml] does not exist
+00:16:12.381 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.spring4all.manager.controller.ProductControllerTest]: class path resource [com/spring4all/manager/controller/ProductControllerTestContext.groovy] does not exist
+00:16:12.381 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.spring4all.manager.controller.ProductControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:16:12.424 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.451 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.spring4all.manager.controller.ProductControllerTest]: using defaults.
+00:16:12.456 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+00:16:12.483 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5e40182e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6bbaaa37, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e63f8b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@66cd3400, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3892d19f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6473fa8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36ed528c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@398f0d65, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@17bf3de2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28bafac2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@749fa46b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@353a7bb8]
+00:16:12.486 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.487 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.488 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.488 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.492 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6593fbf1 testClass = ProductControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c43b497 testClass = ProductControllerTest, locations = '{}', classes = '{class com.spring4all.manager.ManagerApp, class com.spring4all.manager.ManagerApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e54961, org.springframework.boot.test.context.SpringBootTestContextCustomizer@7cc6b73, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1399888e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ccff8ea, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+00:16:12.690 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.690 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.spring4all.manager.controller.ProductControllerTest]
+00:16:12.691 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6593fbf1 testClass = ProductControllerTest, testInstance = com.spring4all.manager.controller.ProductControllerTest@44f78996, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c43b497 testClass = ProductControllerTest, locations = '{}', classes = '{class com.spring4all.manager.ManagerApp, class com.spring4all.manager.ManagerApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e54961, org.springframework.boot.test.context.SpringBootTestContextCustomizer@7cc6b73, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1399888e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ccff8ea, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+00:16:12.756 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+00:16:12.760 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+00:16:12.760 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+00:16:12.762 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+00:16:12.763 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2018-07-15 00:16:13.738  INFO 94732 --- [    Test worker] c.s.m.controller.ProductControllerTest   : Starting ProductControllerTest on qiankeqindeMacBook-Pro-2.local with PID 94732 (started by qiankeqin in /Users/qiankeqin/Documents/ProjectSource/mydev/FinCompareAcount/financial/manager)
+2018-07-15 00:16:13.739  INFO 94732 --- [    Test worker] c.s.m.controller.ProductControllerTest   : No active profile set, falling back to default profiles: default
+2018-07-15 00:16:13.784  INFO 94732 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7276d119: startup date [Sun Jul 15 00:16:13 CST 2018]; root of context hierarchy
+2018-07-15 00:16:16.215  INFO 94732 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2018-07-15 00:16:16.254  INFO 94732 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-15 00:16:16.260  INFO 94732 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-07-15 00:16:16.425  INFO 94732 --- [ost-startStop-1] o.a.c.c.C.[.[localhost].[/manager]       : Initializing Spring embedded WebApplicationContext
+2018-07-15 00:16:16.426  INFO 94732 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2649 ms
+2018-07-15 00:16:16.663  INFO 94732 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-15 00:16:16.671  INFO 94732 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 00:16:16.673  INFO 94732 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 00:16:16.674  INFO 94732 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 00:16:16.674  INFO 94732 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 00:16:17.392  INFO 94732 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-15 00:16:17.412  INFO 94732 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-15 00:16:17.540  INFO 94732 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-07-15 00:16:17.542  INFO 94732 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-07-15 00:16:17.546  INFO 94732 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-07-15 00:16:17.610  INFO 94732 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-15 00:16:17.773  INFO 94732 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-07-15 00:16:18.460  INFO 94732 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+Hibernate: drop table tp_order if exists
+Hibernate: drop table tp_product if exists
+Hibernate: create table tp_order (order_id varchar(255) not null, amout decimal(19,2), chan_id varchar(255), chan_user_id varchar(255), create_at timestamp, memo varchar(255), order_status varchar(255), order_type varchar(255), outer_order_id varchar(255), product_id varchar(255), update_at timestamp, primary key (order_id))
+Hibernate: create table tp_product (id varchar(255) not null, create_at timestamp, create_user varchar(255), lock_term integer, memo varchar(255), name varchar(255), reward_rate decimal(19,2), status varchar(255), step_amount decimal(19,2), threshold_amount decimal(19,2), update_at timestamp, update_user varchar(255), primary key (id))
+2018-07-15 00:16:18.475  INFO 94732 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-07-15 00:16:18.509  INFO 94732 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-15 00:16:19.271  INFO 94732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7276d119: startup date [Sun Jul 15 00:16:13 CST 2018]; root of context hierarchy
+2018-07-15 00:16:19.352  INFO 94732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product],methods=[GET]}&quot; onto public org.springframework.data.domain.Page&lt;com.spring4all.entity.TpProduct&gt; com.spring4all.manager.controller.ProductController.query(java.lang.String,java.math.BigDecimal,java.math.BigDecimal,java.lang.String,int,int)
+2018-07-15 00:16:19.354  INFO 94732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product/{id}],methods=[GET]}&quot; onto public com.spring4all.entity.TpProduct com.spring4all.manager.controller.ProductController.findOne(java.lang.String)
+2018-07-15 00:16:19.354  INFO 94732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product],methods=[POST]}&quot; onto public com.spring4all.entity.TpProduct com.spring4all.manager.controller.ProductController.addProduct(com.spring4all.entity.TpProduct)
+2018-07-15 00:16:19.356  INFO 94732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 00:16:19.356  INFO 94732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 00:16:19.392  INFO 94732 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 00:16:19.393  INFO 94732 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 00:16:19.420  INFO 94732 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorControllerAdvice
+2018-07-15 00:16:19.451  INFO 94732 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 00:16:19.749  INFO 94732 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 58343 (http)
+2018-07-15 00:16:19.755  INFO 94732 --- [    Test worker] c.s.m.controller.ProductControllerTest   : Started ProductControllerTest in 6.985 seconds (JVM running for 8.183)
+2018-07-15 00:16:19.944  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json-请求参数:&lt;{&quot;id&quot;:&quot;T001&quot;,&quot;name&quot;:&quot;灵活宝1号&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:null,&quot;rewardRate&quot;:3.42,&quot;memo&quot;:null,&quot;createAt&quot;:null,&quot;updateAt&quot;:null,&quot;createUser&quot;:null,&quot;updateUser&quot;:null},{Content-Type=[application/json;charset=UTF-8], Accept=[application/json]}&gt;
+2018-07-15 00:16:20.133  INFO 94732 --- [o-auto-1-exec-1] o.a.c.c.C.[.[localhost].[/manager]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 00:16:20.134  INFO 94732 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 00:16:20.164  INFO 94732 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-07-15 00:16:20.221  INFO 94732 --- [o-auto-1-exec-1] c.s.m.controller.ProductController       : 创建产品,参数:TpOrder{id='T001', name='灵活宝1号', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=null, rewardRate=3.42, memo='null', createAt=null, updateAt=null, createUser='null', updateUser='null'}
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+Hibernate: insert into tp_product (create_at, create_user, lock_term, memo, name, reward_rate, status, step_amount, threshold_amount, update_at, update_user, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-15 00:16:20.313  INFO 94732 --- [o-auto-1-exec-1] c.s.m.controller.ProductController       : 创建产品,结果:TpOrder{id='T001', name='灵活宝1号', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=0, rewardRate=3.42, memo='null', createAt=Sun Jul 15 00:16:20 CST 2018, updateAt=Sun Jul 15 00:16:20 CST 2018, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.345  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json 响应信息:{&quot;id&quot;:&quot;T001&quot;,&quot;name&quot;:&quot;灵活宝1号&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:0,&quot;rewardRate&quot;:3.42,&quot;memo&quot;:null,&quot;createAt&quot;:1531584980222,&quot;updateAt&quot;:1531584980222,&quot;createUser&quot;:null,&quot;updateUser&quot;:null}
+2018-07-15 00:16:20.346  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json-请求参数:&lt;{&quot;id&quot;:&quot;T002&quot;,&quot;name&quot;:&quot;尊享2号&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:null,&quot;rewardRate&quot;:5.2,&quot;memo&quot;:null,&quot;createAt&quot;:null,&quot;updateAt&quot;:null,&quot;createUser&quot;:null,&quot;updateUser&quot;:null},{Content-Type=[application/json;charset=UTF-8], Accept=[application/json]}&gt;
+2018-07-15 00:16:20.353  INFO 94732 --- [o-auto-1-exec-2] c.s.m.controller.ProductController       : 创建产品,参数:TpOrder{id='T002', name='尊享2号', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=null, rewardRate=5.2, memo='null', createAt=null, updateAt=null, createUser='null', updateUser='null'}
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+Hibernate: insert into tp_product (create_at, create_user, lock_term, memo, name, reward_rate, status, step_amount, threshold_amount, update_at, update_user, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-15 00:16:20.357  INFO 94732 --- [o-auto-1-exec-2] c.s.m.controller.ProductController       : 创建产品,结果:TpOrder{id='T002', name='尊享2号', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=0, rewardRate=5.2, memo='null', createAt=Sun Jul 15 00:16:20 CST 2018, updateAt=Sun Jul 15 00:16:20 CST 2018, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.360  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json 响应信息:{&quot;id&quot;:&quot;T002&quot;,&quot;name&quot;:&quot;尊享2号&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:0,&quot;rewardRate&quot;:5.2,&quot;memo&quot;:null,&quot;createAt&quot;:1531584980353,&quot;updateAt&quot;:1531584980353,&quot;createUser&quot;:null,&quot;updateUser&quot;:null}
+2018-07-15 00:16:20.361  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json-请求参数:&lt;{&quot;id&quot;:&quot;T003&quot;,&quot;name&quot;:&quot;安家盈1号&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:null,&quot;rewardRate&quot;:4.0,&quot;memo&quot;:null,&quot;createAt&quot;:null,&quot;updateAt&quot;:null,&quot;createUser&quot;:null,&quot;updateUser&quot;:null},{Content-Type=[application/json;charset=UTF-8], Accept=[application/json]}&gt;
+2018-07-15 00:16:20.366  INFO 94732 --- [o-auto-1-exec-3] c.s.m.controller.ProductController       : 创建产品,参数:TpOrder{id='T003', name='安家盈1号', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=null, rewardRate=4.0, memo='null', createAt=null, updateAt=null, createUser='null', updateUser='null'}
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+Hibernate: insert into tp_product (create_at, create_user, lock_term, memo, name, reward_rate, status, step_amount, threshold_amount, update_at, update_user, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-15 00:16:20.369  INFO 94732 --- [o-auto-1-exec-3] c.s.m.controller.ProductController       : 创建产品,结果:TpOrder{id='T003', name='安家盈1号', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=0, rewardRate=4.0, memo='null', createAt=Sun Jul 15 00:16:20 CST 2018, updateAt=Sun Jul 15 00:16:20 CST 2018, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.371  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json 响应信息:{&quot;id&quot;:&quot;T003&quot;,&quot;name&quot;:&quot;安家盈1号&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:0,&quot;rewardRate&quot;:4.0,&quot;memo&quot;:null,&quot;createAt&quot;:1531584980366,&quot;updateAt&quot;:1531584980366,&quot;createUser&quot;:null,&quot;updateUser&quot;:null}
+2018-07-15 00:16:20.385  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json-请求参数:&lt;{&quot;id&quot;:null,&quot;name&quot;:&quot;产品编号不可为空&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:null,&quot;rewardRate&quot;:3.42,&quot;memo&quot;:null,&quot;createAt&quot;:null,&quot;updateAt&quot;:null,&quot;createUser&quot;:null,&quot;updateUser&quot;:null},{Content-Type=[application/json;charset=UTF-8], Accept=[application/json]}&gt;
+2018-07-15 00:16:20.396  INFO 94732 --- [o-auto-1-exec-4] c.s.m.controller.ProductController       : 创建产品,参数:TpOrder{id='null', name='产品编号不可为空', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=null, rewardRate=3.42, memo='null', createAt=null, updateAt=null, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.415  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json 响应信息:{&quot;canRetry&quot;:false,&quot;code&quot;:&quot;F0001&quot;,&quot;message&quot;:&quot;产品编号不可为空&quot;,&quot;type&quot;:&quot;advice&quot;}
+2018-07-15 00:16:20.415  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json-请求参数:&lt;{&quot;id&quot;:&quot;E002&quot;,&quot;name&quot;:&quot;收益率需在0～30%之间&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1,&quot;lockTerm&quot;:null,&quot;rewardRate&quot;:35.2,&quot;memo&quot;:null,&quot;createAt&quot;:null,&quot;updateAt&quot;:null,&quot;createUser&quot;:null,&quot;updateUser&quot;:null},{Content-Type=[application/json;charset=UTF-8], Accept=[application/json]}&gt;
+2018-07-15 00:16:20.420  INFO 94732 --- [o-auto-1-exec-5] c.s.m.controller.ProductController       : 创建产品,参数:TpOrder{id='E002', name='收益率需在0～30%之间', status='AUDITING', thresholdAmount=10, stepAmount=1, lockTerm=null, rewardRate=35.2, memo='null', createAt=null, updateAt=null, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.423  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json 响应信息:{&quot;canRetry&quot;:false,&quot;code&quot;:&quot;F0002&quot;,&quot;message&quot;:&quot;收益率需在0～30%之间&quot;,&quot;type&quot;:&quot;advice&quot;}
+2018-07-15 00:16:20.424  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json-请求参数:&lt;{&quot;id&quot;:&quot;E003&quot;,&quot;name&quot;:&quot;投资步长必须为整数&quot;,&quot;status&quot;:&quot;AUDITING&quot;,&quot;thresholdAmount&quot;:10,&quot;stepAmount&quot;:1.01,&quot;lockTerm&quot;:null,&quot;rewardRate&quot;:4.0,&quot;memo&quot;:null,&quot;createAt&quot;:null,&quot;updateAt&quot;:null,&quot;createUser&quot;:null,&quot;updateUser&quot;:null},{Content-Type=[application/json;charset=UTF-8], Accept=[application/json]}&gt;
+2018-07-15 00:16:20.428  INFO 94732 --- [o-auto-1-exec-6] c.s.m.controller.ProductController       : 创建产品,参数:TpOrder{id='E003', name='投资步长必须为整数', status='AUDITING', thresholdAmount=10, stepAmount=1.01, lockTerm=null, rewardRate=4.0, memo='null', createAt=null, updateAt=null, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.430  INFO 94732 --- [    Test worker] com.spring4all.util.RestUtil             : rest-post-json 响应信息:{&quot;canRetry&quot;:false,&quot;code&quot;:&quot;F0003&quot;,&quot;message&quot;:&quot;投资步长必须为整数&quot;,&quot;type&quot;:&quot;advice&quot;}
+2018-07-15 00:16:20.441  INFO 94732 --- [o-auto-1-exec-7] c.s.m.controller.ProductController       : 查询单个产品，id=T001
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+2018-07-15 00:16:20.453  INFO 94732 --- [o-auto-1-exec-7] c.s.m.controller.ProductController       : 查询单个产品，result=TpOrder{id='T001', name='灵活宝1号', status='AUDITING', thresholdAmount=10.00, stepAmount=1.00, lockTerm=0, rewardRate=3.42, memo='null', createAt=2018-07-15 00:16:20.222, updateAt=2018-07-15 00:16:20.222, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.459  INFO 94732 --- [o-auto-1-exec-8] c.s.m.controller.ProductController       : 查询单个产品，id=T002
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+2018-07-15 00:16:20.461  INFO 94732 --- [o-auto-1-exec-8] c.s.m.controller.ProductController       : 查询单个产品，result=TpOrder{id='T002', name='尊享2号', status='AUDITING', thresholdAmount=10.00, stepAmount=1.00, lockTerm=0, rewardRate=5.20, memo='null', createAt=2018-07-15 00:16:20.353, updateAt=2018-07-15 00:16:20.353, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.465  INFO 94732 --- [o-auto-1-exec-9] c.s.m.controller.ProductController       : 查询单个产品，id=T003
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+2018-07-15 00:16:20.467  INFO 94732 --- [o-auto-1-exec-9] c.s.m.controller.ProductController       : 查询单个产品，result=TpOrder{id='T003', name='安家盈1号', status='AUDITING', thresholdAmount=10.00, stepAmount=1.00, lockTerm=0, rewardRate=4.00, memo='null', createAt=2018-07-15 00:16:20.366, updateAt=2018-07-15 00:16:20.366, createUser='null', updateUser='null'}
+2018-07-15 00:16:20.472  INFO 94732 --- [-auto-1-exec-10] c.s.m.controller.ProductController       : 查询单个产品，id=null
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+2018-07-15 00:16:20.473  INFO 94732 --- [-auto-1-exec-10] c.s.m.controller.ProductController       : 查询单个产品，result=null
+2018-07-15 00:16:20.478  INFO 94732 --- [o-auto-1-exec-1] c.s.m.controller.ProductController       : 查询单个产品，id=E002
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+2018-07-15 00:16:20.480  INFO 94732 --- [o-auto-1-exec-1] c.s.m.controller.ProductController       : 查询单个产品，result=null
+2018-07-15 00:16:20.485  INFO 94732 --- [o-auto-1-exec-1] c.s.m.controller.ProductController       : 查询单个产品，id=E003
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+2018-07-15 00:16:20.488  INFO 94732 --- [o-auto-1-exec-1] c.s.m.controller.ProductController       : 查询单个产品，result=null
+2018-07-15 00:16:20.502  INFO 94732 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@6593fbf1 testClass = ProductControllerTest, testInstance = com.spring4all.manager.controller.ProductControllerTest@7ddd3446, testMethod = transaction@ProductControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c43b497 testClass = ProductControllerTest, locations = '{}', classes = '{class com.spring4all.manager.ManagerApp, class com.spring4all.manager.ManagerApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e54961, org.springframework.boot.test.context.SpringBootTestContextCustomizer@7cc6b73, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1399888e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ccff8ea, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@69587a2a]; rollback [true]
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+Hibernate: update tp_product set create_at=?, create_user=?, lock_term=?, memo=?, name=?, reward_rate=?, status=?, step_amount=?, threshold_amount=?, update_at=?, update_user=? where id=?
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+Hibernate: update tp_product set create_at=?, create_user=?, lock_term=?, memo=?, name=?, reward_rate=?, status=?, step_amount=?, threshold_amount=?, update_at=?, update_user=? where id=?
+Hibernate: select tpproduct0_.id as id1_1_0_, tpproduct0_.create_at as create_a2_1_0_, tpproduct0_.create_user as create_u3_1_0_, tpproduct0_.lock_term as lock_ter4_1_0_, tpproduct0_.memo as memo5_1_0_, tpproduct0_.name as name6_1_0_, tpproduct0_.reward_rate as reward_r7_1_0_, tpproduct0_.status as status8_1_0_, tpproduct0_.step_amount as step_amo9_1_0_, tpproduct0_.threshold_amount as thresho10_1_0_, tpproduct0_.update_at as update_11_1_0_, tpproduct0_.update_user as update_12_1_0_ from tp_product tpproduct0_ where tpproduct0_.id=?
+Hibernate: update tp_product set create_at=?, create_user=?, lock_term=?, memo=?, name=?, reward_rate=?, status=?, step_amount=?, threshold_amount=?, update_at=?, update_user=? where id=?
+2018-07-15 00:16:20.525  INFO 94732 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@6593fbf1 testClass = ProductControllerTest, testInstance = com.spring4all.manager.controller.ProductControllerTest@7ddd3446, testMethod = transaction@ProductControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c43b497 testClass = ProductControllerTest, locations = '{}', classes = '{class com.spring4all.manager.ManagerApp, class com.spring4all.manager.ManagerApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@23e54961, org.springframework.boot.test.context.SpringBootTestContextCustomizer@7cc6b73, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1399888e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ccff8ea, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2018-07-15 00:16:20.566  INFO 94732 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select tpproduct0_.id as id1_1_, tpproduct0_.create_at as create_a2_1_, tpproduct0_.create_user as create_u3_1_, tpproduct0_.lock_term as lock_ter4_1_, tpproduct0_.memo as memo5_1_, tpproduct0_.name as name6_1_, tpproduct0_.reward_rate as reward_r7_1_, tpproduct0_.status as status8_1_, tpproduct0_.step_amount as step_amo9_1_, tpproduct0_.threshold_amount as thresho10_1_, tpproduct0_.update_at as update_11_1_, tpproduct0_.update_user as update_12_1_ from tp_product tpproduct0_
+Hibernate: delete from tp_product where id=?
+Hibernate: delete from tp_product where id=?
+Hibernate: delete from tp_product where id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at 2018-7-15 0:16:20</p>
+</div>
+</div>
+</body>
+</html>

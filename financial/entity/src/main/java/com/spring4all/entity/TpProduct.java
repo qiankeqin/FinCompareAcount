@@ -1,5 +1,8 @@
 package com.spring4all.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
@@ -12,6 +15,7 @@ import java.util.Date;
  * @create: 2018-07-14 00:28
  **/
 @Entity(name="tp_product")
+//@ApiModel(value="product_model",description = "产品模型")
 public class TpProduct {
     //主键注解
     @Id
@@ -20,6 +24,7 @@ public class TpProduct {
     /**
      * @see com.spring4all.entity.enums.ProductStatus
      */
+    @ApiModelProperty(value="状态",dataType = "com.spring4all.entity.enums.ProductStatus")
     private String status;
     //起投金额
     private BigDecimal thresholdAmount;

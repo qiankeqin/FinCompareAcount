@@ -1,8 +1,11 @@
 package com.spring4all.manager;
 
+import com.spring4all.swagger.EnableMySwagger;
+import com.spring4all.swagger.SwaggerConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Import;
 
 /**
  * @program: financial

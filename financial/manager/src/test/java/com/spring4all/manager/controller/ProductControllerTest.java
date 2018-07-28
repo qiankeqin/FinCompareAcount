@@ -3,10 +3,14 @@ package com.spring4all.manager.controller;
 import com.spring4all.manager.*;
 import com.spring4all.entity.TpProduct;
 import com.spring4all.entity.enums.ProductStatus;
+import com.spring4all.manager.repositories.TpProductRepository;
 import com.spring4all.util.RestUtil;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.client.ClientHttpResponse;
@@ -16,6 +20,7 @@ import org.springframework.util.Assert;
 import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
+import javax.transaction.Transactional;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -31,9 +36,13 @@ import java.util.Map;
  **/
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,classes = ManagerApp.class)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ProductControllerTest {
 
     private static RestTemplate rest = new RestTemplate();
+
+    @Autowired
+    private TpProductRepository productRepository;
 
     //根路径
     @Value("http://localhost:${local.server.port}/manager")
@@ -58,7 +67,7 @@ public class ProductControllerTest {
         normals.add(p3);
 
         //异常数据
-        TpProduct e1 = new TpProduct(null,"产品编号为空", ProductStatus.AUDITING.name(),
+        TpProduct e1 = new TpProduct(null,"产品编号不可为空", ProductStatus.AUDITING.name(),
                 BigDecimal.valueOf(10),BigDecimal.valueOf(1),BigDecimal.valueOf(3.42));
         TpProduct e2 = new TpProduct("E002","收益率需在0～30%之间",ProductStatus.AUDITING.name(),
                 BigDecimal.valueOf(10),BigDecimal.valueOf(1),BigDecimal.valueOf(35.2));
@@ -108,5 +117,33 @@ public class ProductControllerTest {
         });
     }
 
+    @Test
+    public void findOne(){
+        normals.forEach(product->{
+            TpProduct result = rest.getForObject(baseUrl + "/product/" + product.getId(), TpProduct.class);
+            Assert.isTrue(result!=null && product.getId().equals(result.getId()),"查询失败");
+        });
+
+        errors.forEach(product->{
+            TpProduct result = rest.getForObject(baseUrl + "/product/" + product.getId(), TpProduct.class);
+            Assert.isNull(result,"查询失败");
+        });
+    }
+
+
+    @Test
+    @Transactional
+    public void transaction(){
+        normals.forEach(product -> {
+            product.setLockTerm(0);
+            productRepository.saveAndFlush(product);
+
+        });
+    }
+
+    @Test
+    public void zzzzClean(){
+        productRepository.deleteAll();
+    }
 
 }

@@ -1,5 +1,7 @@
 dependencies{
     compile project(":entity")
     compile project(":util")
+    compile project(":swagger")
+    compile project(":api")
     compile libs.mysql
 }

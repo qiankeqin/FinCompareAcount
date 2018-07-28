@@ -142,10 +142,10 @@ public class TpProductService {
         Assert.notNull(product.getId(), ErrorEnum.ID_NOT_NULL.getCode());
         //其他非空校验
 
-        Assert.isTrue(BigDecimal.ZERO.compareTo(product.getRewardRate())<0 && BigDecimal.valueOf(30).compareTo(product.getRewardRate())>0,"收益率需在0～30%之间");
+        Assert.isTrue(BigDecimal.ZERO.compareTo(product.getRewardRate())<0 && BigDecimal.valueOf(30).compareTo(product.getRewardRate())>0,ErrorEnum.REWARDRATE_ERROR.getCode());
 
         //longValue()获取整数部分
-        Assert.isTrue(BigDecimal.valueOf(product.getStepAmount().longValue()).compareTo(product.getStepAmount())==0,"投资步长必须为整数");
+        Assert.isTrue(BigDecimal.valueOf(product.getStepAmount().longValue()).compareTo(product.getStepAmount())==0,ErrorEnum.STEPAMOUNT.getCode());
 
     }
 
