@@ -1,7 +1,7 @@
 package com.spring4all.manager.configuration;
 
 import com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImplExporter;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  **/
 @Configuration
 public class RpcConfiguration {
-    @Autowired
+    @Bean
     public AutoJsonRpcServiceImplExporter rpcServiceImplExporter(){
         return new AutoJsonRpcServiceImplExporter();
     }
